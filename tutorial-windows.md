@@ -18,8 +18,8 @@ and to extract the .dat now: `JSRFSoundTool.exe split pv_gum.dat`
 
 # Step 4. - Converting
 To convert the XBox readable waves to pc readable type the following:
-`XboxADPCM WavOutput/pv_gum_1.wav WavInput/pv_gum_1.wav` to directly outputting it into the WavInput folder, do this with every wav file OR copy all of the WavInput files in it and convert it to windows readable. with this command:
-`XboxADPCM WavInput/pv_gum_1.wav WavInput/pv_gum_1.wav` to overwrite it to windows readable.
+`XboxADPCM.exe WavOutput/pv_gum_1.wav WavInput/pv_gum_1.wav` to directly outputting it into the WavInput folder, do this with every wav file OR copy all of the WavInput files in it and convert it to windows readable. with this command:
+`XboxADPCM.exe WavInput/pv_gum_1.wav WavInput/pv_gum_1.wav` to overwrite it to windows readable.
 
 # Step 5. - Editing
 You are now able to edit the files, but make sure they are the **EXACT** same length !!!
@@ -27,11 +27,11 @@ You can use the free tool [AudaCity](https://www.audacityteam.org/) to edit them
 
 # Step 6. - Converting it back
 To convert it back to the XBox readable files use the following command:
-`XboxADPCM WavInput/pv_gum_1.wav WavInput/pv_gum_1.wav` (it will automatically switch between them, if you want to check if your pc wav player plays it if YES its PC wav if not its XBox Wav)
+`XboxADPCM.exe WavInput/pv_gum_1.wav WavInput/pv_gum_1.wav` (it will automatically switch between them, if you want to check if your pc wav player plays it if YES its PC wav if not its XBox Wav)
 
 # Step 7. - Making it a JSRF Sound file
 To make the modded sounds a jsrf sounds file use the following command:
-`JSRFSoundTool.exe split pv_gum.dat` it will give you the jsrf file in the JSRFOutput folder.
+`JSRFSoundTool.exe join pv_gum.dat` it will give you the jsrf file in the JSRFOutput folder.
 
 
 Now you are basically done, if it crashes, its not the same length.
